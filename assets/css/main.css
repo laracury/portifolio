@@ -158,7 +158,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 40%);
+  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .header .logo {
