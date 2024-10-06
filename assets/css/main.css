@@ -19,10 +19,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #A92AB2; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #040B14; /* Background color for the entire website, including individual sections */
+  --default-color: #d4d4d4; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #bebebe; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #b1580a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -39,10 +39,6 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
-.light-background {
-  --background-color: #f4fafd;
-  --surface-color: #ffffff;
-}
 
 .dark-background {
   --background-color: #040b14;
@@ -70,6 +66,7 @@ a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 a:hover {
@@ -161,7 +158,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 40%);
 }
 
 .header .logo {
@@ -203,6 +200,10 @@ h6 {
 .header .social-links a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 6px var(--accent-color), 
+              0px -3px 6px var(--accent-color),
+              -3px 0px 6px var(--accent-color), 
+              3px 0px 6px var(--accent-color);
 }
 
 @media (min-width: 1200px) {
